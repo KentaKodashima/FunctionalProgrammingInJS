@@ -30,3 +30,24 @@ Though, it is not possible not to have any side effects in a software product. T
 - Printing to the screen or logging.
 - Triggering an external process.
 - Invoking other functions that have side-effects.
+
+## Stateful program
+A program is considered stateful if it is designed to remember data from events or user interactions. The remembered information is called the state of program.
+
+A JS program stores data in variables and objects. The contents of these storage locations at any given moment while the program is running is considered its state.
+
+## What are shared states
+Shared state is any variable, object, or memory space that exists in a shared scope, or as the property of an object being passed between scopes. A hared scope can include global scope or closure scopes. A state is shared when it is in a scope where there are multiple functions that can access and modify the state.
+
+## The problem with shared state
+In order to understand the effects of function, you have to know all of other functions that have affect on the state. 
+
+### Avoiding shared state
+In order to avoid shared states in JS, we can pass the state between functions or clone the object when an object is passed so the original one will not be modified.
+
+### Cloning an object in JS
+#### Shallow copy
+We can use `Object.assign({},obj)` or the spread operator, `...obj`, to shallow copy an object. However, it can't copy the objects inside the object since it is a shallow copy.
+
+#### Deep copy
+In order to copy an object deeply, we can use `JSON.parse(JSON.stringify(obj))`.
