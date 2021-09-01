@@ -36,10 +36,11 @@ A program is considered stateful if it is designed to remember data from events 
 
 A JS program stores data in variables and objects. The contents of these storage locations at any given moment while the program is running is considered its state.
 
-## What are shared states
+## Shared states
+### What are shared states
 Shared state is any variable, object, or memory space that exists in a shared scope, or as the property of an object being passed between scopes. A hared scope can include global scope or closure scopes. A state is shared when it is in a scope where there are multiple functions that can access and modify the state.
 
-## The problem with shared state
+### The problem with shared state
 In order to understand the effects of function, you have to know all of other functions that have affect on the state. 
 
 ### Avoiding shared state
@@ -58,3 +59,11 @@ None of reduce, map and filter functions don't modify the original array.
 reduce: combines the elements of an array using the function you specify.  
 Map: passes each element of the array to the function you provided and returns a new array that consists of the values returned by that function.  
 filter: returns a new array that is a subset of the existing array.
+
+## FUnction composition
+The idea of combining multiple functions with a single task in order to achieve complicated task.
+
+### Functions (in the functional programming paradigm) VS. Procedures
+- Functions have an input
+- Functions return a value
+- Functions are simplified to a single task
