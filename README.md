@@ -51,3 +51,10 @@ We can use `Object.assign({},obj)` or the spread operator, `...obj`, to shallow 
 
 #### Deep copy
 In order to copy an object deeply, we can use `JSON.parse(JSON.stringify(obj))`.
+
+#### recude, map and filter
+None of reduce, map and filter functions don't modify the original array.
+
+reduce: combines the elements of an array using the function you specify.  
+Map: passes each element of the array to the function you provided and returns a new array that consists of the values returned by that function.  
+filter: returns a new array that is a subset of the existing array.
