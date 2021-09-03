@@ -96,3 +96,10 @@ It will take a function that expects multiple arguments and reduce it to multipl
 #### Curried function
 - A curried function is a function that takes multiple arguments one at a time.
 - Currying is where a function that expects multiple arguments is broken down into successive functions that each take a single argument and return another function to accept the next argument.
+
+## Imperative programming vs declarative programming
+### Imperative programming
+Imperative programming is a programming style that tells the computer how to accomplish some task.
+
+### declarative programming
+Declarative programming expresses the logic of a program without identifying the control flow. Control flow is abstracted away, so declarative code only needs to specify what to do, not how it should be done. Declarative code is much more easier to reason about than imperative code.
