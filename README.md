@@ -60,10 +60,39 @@ reduce: combines the elements of an array using the function you specify.
 Map: passes each element of the array to the function you provided and returns a new array that consists of the values returned by that function.  
 filter: returns a new array that is a subset of the existing array.
 
-## FUnction composition
+## Function composition
 The idea of combining multiple functions with a single task in order to achieve complicated task.
 
 ### Functions (in the functional programming paradigm) VS. Procedures
 - Functions have an input
 - Functions return a value
 - Functions are simplified to a single task
+
+### Fist class funciton
+The term "first-class" means that something is just a value. A first-class function is one that can go anywhere that any other value can go - there are few to no restrictions. Meaning, a first class function is treated as a value.
+
+### Higher order function
+Higher order functions are functions that operate on other functions by either taking them as arguments or returning them. The fact that JS supports first-class functions makes it possible to create higher order functions.
+
+### Closure
+- A closure is the local variables for a function - kept alive after the function has returned
+- Closure is when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope
+- A closure is a function having access to the parent scope, even after the parent function has closed
+
+### Curring
+#### Arity
+Arity is the number of parameters that a function has.
+
+#### Advantages of currying
+It will take a function that expects multiple arguments and reduce it to multiple functions that expect only a single argument. This allows us to use high arity functions as a part of composition. Functions with only a single argument in composition can be called **unary functions**.
+
+- Currying can be used to specialize functions
+- Currying simplifies function composition
+
+#### Partial application
+- A partial application is a function which has been applied to some, but not yet all of its arguments. In other words, it's a function which has some arguments fixed inside its closure scope.
+- Partial application is when we call a function with fewer arguments thatn it expects and that function returns a function that takes the remaining arguments.
+
+#### Curried function
+- A curried function is a function that takes multiple arguments one at a time.
+- Currying is where a function that expects multiple arguments is broken down into successive functions that each take a single argument and return another function to accept the next argument.
