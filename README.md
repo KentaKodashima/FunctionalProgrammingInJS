@@ -103,3 +103,5 @@ Imperative programming is a programming style that tells the computer how to acc
 
 ### declarative programming
 Declarative programming expresses the logic of a program without identifying the control flow. Control flow is abstracted away, so declarative code only needs to specify what to do, not how it should be done. Declarative code is much more easier to reason about than imperative code.
+
+## Another functional approach using recursion and factory
